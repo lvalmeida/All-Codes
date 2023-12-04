@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+  float gasolina, etanol, razão; 
+  
+  printf("Informe preço da gasolina: ");
+  scanf("%f", &gasolina);
+
+  printf("Informe preço do etanol: ");
+  scanf("%f", &etanol); 
+
+  razão = etanol / gasolina;
+  printf("A razão entre etanol e gasolina é: %f\n", razão); 
+  
+  if (razão < 0.7) {
+    printf("Abastecer com etanol"); 
+  } else if ( razão >= 0.7){
+    printf("Abastecer com gasolina"); 
+  }
+  
+  return 0;
+}
